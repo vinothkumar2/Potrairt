@@ -1,0 +1,84 @@
+/* styles.css */
+
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+}
+
+/* Container for the entire layout */
+.container {
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+/* Portrait section */
+.portrait {
+  position: relative;
+  display: inline-block;
+  margin: 20px 0;
+  border: 5px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Portrait image styling */
+.portrait img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease; /* Smooth zoom effect */
+}
+
+/* Zoom effect on hover */
+.portrait:hover img {
+  transform: scale(1.1); /* Zoom in */
+}
+
+/* Song info box */
+#song-info {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  display: inline-block;
+  visibility: hidden; /* Initially hidden */
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s ease; /* Smooth fade-in effect */
+}
+
+/* Make the portrait responsive */
+.portrait img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  #song-info {
+    font-size: 1rem;
+    padding: 8px 10px;
+  }
+}
+.song-overlay {
+    position: absolute;
+    color: #000; /* Text color */
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.8); /* Optional background for readability */
+    border-radius: 5px;
+    padding: 5px;
+    display: none; /* Hidden by default */
+}
+
+.song-overlay:hover {
+    display: block; /* Show on hover */
+}

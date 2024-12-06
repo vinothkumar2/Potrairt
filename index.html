@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shashaa Tirupati Portrait</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            margin: 20px;
+            color: #444;
+        }
+        #portrait-container {
+            position: relative;
+            width: 50%;
+            margin: 20px auto;
+            display: inline-block;
+        }
+        #portrait-container img {
+            width: 100%;
+            display: block;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+        /* Modified song names style with transparent background */
+        .song-name {
+            position: absolute;
+            font-size: 14px;
+            color: #444;
+            background-color: rgba(255, 255, 255, 0.3); /* More transparent background */
+            padding: 2px 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transform: translate(-50%, -50%);
+            transition: transform 0.2s ease, font-size 0.2s ease, background-color 0.2s ease;
+        }
+        .song-name:hover {
+            transform: translate(-50%, -50%) scale(1.1);
+            font-size: 16px;
+            font-weight: bold;
+            background-color: rgba(255, 255, 255, 0.5); /* Slightly more visible on hover */
+        }
+        /* Info box for song details */
+        .song-info {
+            position: absolute;
+            display: none;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 8px;
+            border-radius: 5px;
+            font-size: 12px;
+            text-align: left;
+            z-index: 10;
+            white-space: nowrap;
+        }
+        .song-name:hover + .song-info {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Shashaa Tirupati Portrait</h1>
+    <div id="portrait-container">
+        <!-- Portrait Image -->
+        <img src="PicRetouch_20241203_234127600.png" alt="Shashaa Tirupati Portrait">
+        
+        <!-- Song names on the portrait -->
+        <div class="song-name" style="top: 20%; left: 40%;">Vaan</div>
+        <div class="song-info" style="top: 25%; left: 45%;">
+            <strong>Vaan</strong><br>
+            Language: Tamil<br>
+            Year: 2018<br>
+            Album: Kaatrin Mozhi
+        </div>
+        <div class="song-name" style="top: 40%; left: 30%;">Toh Bio</div>
+        <div class="song-info" style="top: 45%; left: 35%;">
+            <strong>Toh Bio</strong><br>
+            Language: Farsi<br>
+            Year: 2024<br>
+            Album: Independent Single
+        </div>
+        <div class="song-name" style="top: 60%; left: 50%;">Rasaali</div>
+        <div class="song-info" style="top: 65%; left: 55%;">
+            <strong>Rasaali</strong><br>
+            Language: Tamil<br>
+            Year: 2016<br>
+            Album: Achcham Yenbadhu Madamaiyada
+        </div>
+    </div>
+</body>
+</html>
