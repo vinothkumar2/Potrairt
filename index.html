@@ -2,8 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1024, initial-scale=1.0">
     <title>Shashaa Tirupati Portrait</title>
+    <!-- Google Fonts: Pacifico -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -28,23 +33,25 @@
             border: 1px solid #ddd;
             border-radius: 10px;
         }
-        /* Modified song names style with transparent background */
+        /* General styles for song names */
         .song-name {
             position: absolute;
             font-size: 14px;
-            color: #444;
-            background-color: rgba(255, 255, 255, 0.3); /* More transparent background */
+            font-weight: bold;
             padding: 2px 5px;
             border-radius: 5px;
             cursor: pointer;
             transform: translate(-50%, -50%);
-            transition: transform 0.2s ease, font-size 0.2s ease, background-color 0.2s ease;
+            transition: transform 0.2s ease, font-size 0.2s ease;
+            font-family: Arial, sans-serif; /* Default font */
         }
         .song-name:hover {
             transform: translate(-50%, -50%) scale(1.1);
             font-size: 16px;
-            font-weight: bold;
-            background-color: rgba(255, 255, 255, 0.5); /* Slightly more visible on hover */
+        }
+        /* Pacifico font applied to song names */
+        .pacifico {
+            font-family: "Pacifico", cursive;
         }
         /* Info box for song details */
         .song-info {
@@ -62,36 +69,60 @@
         .song-name:hover + .song-info {
             display: block;
         }
+        /* Vertical text */
+        .vertical {
+            writing-mode: vertical-rl; /* Makes the text flow vertically */
+            text-orientation: mixed;
+            color: #1d3557;
+        }
     </style>
 </head>
 <body>
     <h1>Shashaa Tirupati Portrait</h1>
     <div id="portrait-container">
         <!-- Portrait Image -->
-        <img src="PicRetouch_20241203_234127600.png" alt="Shashaa Tirupati Portrait">
+        <img src="PicRetouch_20gf]241203_234127600.png" alt="Shashaa Tirupati Portrait">
         
-        <!-- Song names on the portrait -->
-        <div class="song-name" style="top: 20%; left: 40%;">Vaan</div>
-        <div class="song-info" style="top: 25%; left: 45%;">
-            <strong>Vaan</strong><br>
-            Language: Tamil<br>
-            Year: 2018<br>
-            Album: Kaatrin Mozhi
+        <!-- Song names with Pacifico font -->
+        <div class="song-name pacifico vertical" style="top: 20.21%; left: 92.57%; color: #e63946;">Rang De</div>
+<!--
+        <div class="song-info" style="top: 69.21%; left: 36.57%;">
+            <strong>Rang De</strong><br>
+            Language: Hindi<br>
+            Year: 2010<br>
+            Album: Bumm Bumm Bole
         </div>
-        <div class="song-name" style="top: 40%; left: 30%;">Toh Bio</div>
-        <div class="song-info" style="top: 45%; left: 35%;">
-            <strong>Toh Bio</strong><br>
-            Language: Farsi<br>
-            Year: 2024<br>
-            Album: Independent Single
+-->
+        
+        <div class="song-name pacifico vertical" style="top: 15.09%; left: 98.33%; color: #f4a261;">My Kajra</div>
+<!--
+        <div class="song-info" style="top: 88.09%; left: 34.33%;">
+            <strong>My Kajra</strong><br>
+            Language: Hindi<br>
+            Year: 2011<br>
+            Album: Turning 30
         </div>
-        <div class="song-name" style="top: 60%; left: 50%;">Rasaali</div>
-        <div class="song-info" style="top: 65%; left: 55%;">
-            <strong>Rasaali</strong><br>
-            Language: Tamil<br>
-            Year: 2016<br>
-            Album: Achcham Yenbadhu Madamaiyada
+-->
+        
+        <div class="song-name vertical pacifico" style="top: 28.02%; left: 98.43%; color: #457b9d;">Love Technology</div>
+<!--
+        <div class="song-info" style="top: 30.02%; left: 75.43%;">
+            <strong>Love Technology</strong><br>
+            Language: Hindi<br>
+            Year: 2011<br>
+            Album: Be Careful
         </div>
+-->
+<div class="song-name  pacifico vertical" style="top: 22%; left: 95%; color: #113AC4;">Be My Mahiya</div>
+<!--
+<div class="song-info" style="top: 61%; left: 34%; ">
+    <strong>Be My Mahiya</strong><br>
+    Language: Hindi<br>
+    Year: 2010<br>
+    Album: Be Careful
+</div>
+-->
+
     </div>
 </body>
 </html>
